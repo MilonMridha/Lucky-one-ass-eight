@@ -17,6 +17,13 @@ const Shop = () => {
             const newCart = [...cart, product];
             setCart(newCart);
         }
+        // const [emptyCart, setEmptyCart] = useState([]);
+        // const resetBtn = () => {
+        //     const newEmptyCart = [];
+        //     setEmptyCart(newEmptyCart);
+            
+            
+        // }
     return (
         <div className='container'>
             <div className='row'>
@@ -33,7 +40,8 @@ const Shop = () => {
 
                 </div>
                 <div className='col-md-3 bg-warning rounded'>
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart}
+                    ></Cart>
                 </div>
             </div>
             
