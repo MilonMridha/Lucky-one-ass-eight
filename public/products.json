@@ -1,0 +1,61 @@
+[
+    {
+        "id" : 1,
+        "name" : "Makeup",
+        "price" : 2149,
+        "img" : "https://m.media-amazon.com/images/I/A1E3XADJJmL._AC_SL1500_.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Lipstick",
+        "price" : 800,
+        "img" : " https://cdn.w600.comps.canstockphoto.com/decorative-cosmetics-for-makeup-stock-photos_csp10274332.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Nailpolish",
+        "price" : 1000,
+        "img" : "https://5.imimg.com/data5/MV/ZG/VS/SELLER-17049796/nail-polish-nail-paint-500x500.jpg"
+    },
+    {
+        "id" : 4,
+        "name" : "Perfume",
+        "price" : 2500,
+        "img": "https://cdn.perfumetrader.de/skin/frontend/perfumetrader/default/images/cms/home/banner_regular.jpg"
+        
+    },
+    {
+        "id" : 5,
+        "name" : "Gel",
+        "price" : 500,
+        "img": "https://5.imimg.com/data5/VQ/RW/MY-8372919/aloe-vera-face-gel-500x500.jpg "
+        
+    },
+    {
+        "id" : 6,
+        "name" : "Eyeliner",
+        "price" : 500,
+        "img": "https://i.pinimg.com/736x/fc/42/90/fc4290bf8df56c35da700f32d063c21e--makeup-eyes-beauty-makeup.jpg "
+        
+    },
+    {
+        "id" : 7,
+        "name" : "",
+        "price" : 500,
+        "img": " "
+        
+    },
+    {
+        "id" : 8,
+        "name" : "",
+        "price" : 500,
+        "img": " "
+        
+    },
+    {
+        "id" : 9,
+        "name" : " ",
+        "price" : 500,
+        "img": " "
+    }
+]
