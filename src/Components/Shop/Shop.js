@@ -14,25 +14,25 @@ const Shop = () => {
         const [cart, setCart] = useState([]);
         
         const addToCartHandle = (product) => {
-            const newCart = [...cart, product];
+           
+            let newCart = [...cart, product];
+          
             setCart(newCart);
+           
         }
         
         // Random selected one btn onclick----------->
-        
+      
         const selectOneItem =() => {
-            const random = [cart[Math.floor(Math.random() * cart.length)]]
-                setCart(random);
-            if(cart){
-                alert('You selected One Item')
-                return
-            }
-            else{
-                alert('please select item')
-                
-            }
-           
-        }
+         
+    const random = [cart[Math.floor(Math.random() * cart.length)]]
+        
+            setCart(random);
+        if(cart){
+            alert('You selected One Item')
+            return
+        } 
+    }
 
         // Reset btn event handler-------------->
         const resetEvent =() => {

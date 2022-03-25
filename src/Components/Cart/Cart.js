@@ -17,7 +17,7 @@ const Cart = ({cart , addHandle, addReset }) => {
             }
             <button onClick={() => addHandle()} className='btn btn-success mt-2'>Select one item</button>
             
-            <button onClick={()=> addReset()} className='btn btn-danger mt-2'>Reset all item</button>
+            <button onClick={()=> addReset()} className='btn btn-danger mt-2'>Reset Cart</button>
         </div>
     );
 };
