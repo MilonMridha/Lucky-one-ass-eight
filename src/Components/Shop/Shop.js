@@ -32,13 +32,16 @@ const Shop = () => {
          
         if(cart.length === 0){
             alert('You Selected One Item')
-            return
+            
         } 
+       
         else{
             const random = [cart[Math.floor(Math.random() * cart.length)]]
         
             setCart(random);
+           
         }
+        
     }
 
         // Reset btn event handler-------------->
