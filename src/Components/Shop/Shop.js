@@ -17,8 +17,8 @@ const Shop = () => {
             const newCart = [...cart, product];
             setCart(newCart);
         }
-        // Random selected one btn onclick----------->
         
+        // Random selected one btn onclick----------->
         const selectOneItem =() => {
             const random = [cart[Math.floor(Math.random() * cart.length)]]
             setCart(random);
@@ -28,6 +28,13 @@ const Shop = () => {
             }
            
         }
+
+        // Reset btn event handler-------------->
+        const resetEvent =() => {
+            const resetCart = [];
+            setCart(resetCart);
+        }
+
     return (
         <div className='container'>
             <div className='row'>
@@ -43,11 +50,11 @@ const Shop = () => {
                     </div>
 
                 </div>
-                
+                {/* Car-Summary section  */}
                 <div className='col-md-3 bg-warning rounded shadow '>
                     <Cart cart={cart}
                     addHandle={selectOneItem}
-                    
+                    addReset={resetEvent}
                     ></Cart>
                 </div>
             </div>
