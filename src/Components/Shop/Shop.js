@@ -14,10 +14,15 @@ const Shop = () => {
         const [cart, setCart] = useState([]);
         
         const addToCartHandle = (product) => {
-           
-            let newCart = [...cart, product];
-          
+           let newCart = [...cart, product];
+           if(newCart.length<=4){
             setCart(newCart);
+           }
+           else{
+               alert('Do not added more than 4 Item')
+           }
+          
+        
            
         }
         
@@ -25,19 +30,22 @@ const Shop = () => {
       
         const selectOneItem =() => {
          
-    const random = [cart[Math.floor(Math.random() * cart.length)]]
-        
-            setCart(random);
-        if(cart){
-            alert('You selected One Item')
+        if(cart.length === 0){
+            alert('You Selected One Item')
             return
         } 
+        else{
+            const random = [cart[Math.floor(Math.random() * cart.length)]]
+        
+            setCart(random);
+        }
     }
 
         // Reset btn event handler-------------->
         const resetEvent =() => {
             const resetCart = [];
             setCart(resetCart);
+        
         }
 
     return (
