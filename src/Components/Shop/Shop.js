@@ -19,12 +19,17 @@ const Shop = () => {
         }
         
         // Random selected one btn onclick----------->
+        
         const selectOneItem =() => {
             const random = [cart[Math.floor(Math.random() * cart.length)]]
-            setCart(random);
+                setCart(random);
             if(cart){
                 alert('You selected One Item')
                 return
+            }
+            else{
+                alert('please select item')
+                
             }
            
         }
