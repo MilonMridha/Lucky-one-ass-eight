@@ -17,13 +17,17 @@ const Shop = () => {
             const newCart = [...cart, product];
             setCart(newCart);
         }
-        // const [emptyCart, setEmptyCart] = useState([]);
-        // const resetBtn = () => {
-        //     const newEmptyCart = [];
-        //     setEmptyCart(newEmptyCart);
-            
-            
-        // }
+        // Random selected one btn onclick----------->
+        
+        const selectOneItem =() => {
+            const random = [cart[Math.floor(Math.random() * cart.length)]]
+            setCart(random);
+            if(cart){
+                alert('You selected One Item')
+                return
+            }
+           
+        }
     return (
         <div className='container'>
             <div className='row'>
@@ -39,8 +43,11 @@ const Shop = () => {
                     </div>
 
                 </div>
-                <div className='col-md-3 bg-warning rounded'>
+                
+                <div className='col-md-3 bg-warning rounded shadow '>
                     <Cart cart={cart}
+                    addHandle={selectOneItem}
+                    
                     ></Cart>
                 </div>
             </div>
